@@ -20,12 +20,12 @@ class ToggleButtonWithText extends React.Component {
   render() {
     const { value } = this.state;
     const {
-      activeText,
-      inActiveText,
+      activeText = 'online',
+      inActiveText= 'offline',
       ActiveImage,
-      DisableImage,
+      inActiveImage,
       activeImageStyle,
-      disableImageStyle,
+      inActiveImageStyle,
       backgroundActive = "transparent",
       backgroundInactive = "transparent",
       containerWidth = 100,
@@ -58,9 +58,9 @@ class ToggleButtonWithText extends React.Component {
             <Image
               style={[
                 styles.imageStyle,
-                value ? activeImageStyle : disableImageStyle,
+                value ? activeImageStyle : inActiveImageStyle,
               ]}
-              source={value ? ActiveImage : DisableImage}
+              source={value ? ActiveImage : inActiveImage}
             />
           </View>
           <View
@@ -105,7 +105,7 @@ class ToggleButtonWithText extends React.Component {
     if (this.state.value) {
       this.props.onActive();
     } else {
-      this.props.onDisable();
+      this.props.onInActive();
     }
   };
 }
@@ -114,9 +114,9 @@ ToggleButtonWithText.propTypes = {
   activeText: PropTypes.string,
   inActiveText: PropTypes.string,
   ActiveImage: PropTypes.string,
-  DisableImage: PropTypes.string,
+  inActiveImage: PropTypes.string,
   activeImageStyle: PropTypes.object,
-  disableImageStyle: PropTypes.object,
+  inActiveImageStyle: PropTypes.object,
   backgroundActive: PropTypes.string,
   backgroundInactive: PropTypes.string,
   containerWidth: PropTypes.number,
@@ -124,6 +124,8 @@ ToggleButtonWithText.propTypes = {
   borderRadius: PropTypes.number,
   textStyle: PropTypes.object,
   disabled: PropTypes.bool,
+  onActive: PropTypes.func,
+  onInActive: PropTypes.func
 };
 const styles = StyleSheet.create({
   imageStyle: {

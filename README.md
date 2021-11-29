@@ -16,54 +16,65 @@ A react native component that show toggle button with text
 </p>
 
 
-> if you didn't passed subtitle it will appear as second image
-> if you passed subtitle it will appear as first image
+> first image states - button is in active state
+> second image states - button is in inActive state
 
-if you want to show image from URI use imageUri. or show an image from project just use image
 
 ## Tech
 
 
-- if you want to show image from URI use imageUri param
-- to show a image from project just use image param
-- how ever one of the params is required
+- use disabled boolean to disable the button
+- onActive function will be trigger in first render
 
 
 ## Installation
 
 
 ```sh
-npm i image-with-text-component
+npm i react-native-toggle-with-text
 ```
 ## Example
 
 Import this module:
 ```sh
-import ProfileImageWithText from 'image-with-text-component';
+import ToggleButtonWithText from 'react-native-toggle-with-text';
 ```
 
 Use as a component:
 ```sh
-<ProfileImageWithText 
-        title='Manojkanth' 
-        title='Mobile dev' 
-        imageUri='https://reactjs.org/logo-og.png'
-        imageViewStyle={{resizeMode: 'repeat'}} />
+<ToggleButtonWithText
+         activeText={'online'}
+                    inActiveText={'offline'}
+                    onActive={() => console.log('online')}
+                    onDisable={() => console.log('offline')}
+                    ActiveImage={require('img/path/active')}
+                    DisableImage={require('img/path/active')}
+                    activeImageStyle={{marginTop: 4}}
+                    disableImageStyle={{marginTop: 4}}
+                  />
 ```
 
 
 
 | Prop | Type | Optional | Default | Description |
 | ------ | ------ | ------ | ------ | ------ |
-| title | String | NO | empty | This is the header title of this component
-| subTitle | String | YES | empty | This is the subtitle of this component. if you want to hide this field just ignore or pass empty string
-| imageWidthConstant | Number | YES | 30 | this will set image Width and Height. NOTE: image width is equal to height
-| imageUri | String | No | '' | use this params to so an image from URL
-| image | String | No | '' | to show an image from project (Note: Please one of image or imageUri must be passed)
-| profileImageContainerStyle | String | No | '' | style of Profile Image Container
-| titleStyle | Object | No | '' | style of title text
-| subTitleStyle | Object | No | '' | style of subtitle text
-| imageViewStyle | Object | No | '' | style of image
+| activeText | String | YES | online | Active state text
+| inActiveText | String | YES | offline | inActive state text
+| ActiveImage | String | YES | Active image | this is the image for active state
+| inActiveImage | String | YES | '' | InActive image | this is the image for inactive state
+| activeImageStyle | String | YES | '' | style of active image style
+| inActiveImageStyle | String | YES | '' | style of inactive image style
+| backgroundActive | String | YES | 'transparent' | background color of active state
+| backgroundInactive | String | YES | 'transparent' | background color of inactive state
+| containerWidth | number | YES | 100 | button width
+| containerheight | number | YES | 30 | button height
+| borderRadius | number | YES | 15 | button border radius
+| textStyle | object | YES | '' | style of text
+| disabled | boolean | YES | false | enable button interaction
+| onActive | function | YES | '' | this is a function trigger when button in active state
+| onInActive | function | YES | '' | this is a function trigger when button in inActive state
+
+
 
 ## Development
 
