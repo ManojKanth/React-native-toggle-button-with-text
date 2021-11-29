@@ -25,6 +25,7 @@ A react native component that show toggle button with text
 
 - use disabled boolean to disable the button
 - onActive function will be trigger in first render
+- you can use your own images for active or inactive states
 
 
 ## Installation
@@ -42,16 +43,7 @@ import ToggleButtonWithText from 'react-native-toggle-with-text';
 
 Use as a component:
 ```sh
-<ToggleButtonWithText
-         activeText={'online'}
-                    inActiveText={'offline'}
-                    onActive={() => console.log('online')}
-                    onDisable={() => console.log('offline')}
-                    ActiveImage={require('img/path/active')}
-                    DisableImage={require('img/path/active')}
-                    activeImageStyle={{marginTop: 4}}
-                    disableImageStyle={{marginTop: 4}}
-                  />
+<ToggleButtonWithText onActive={() => console.log('online')} onDisable={() => console.log('offline')} />
 ```
 
 

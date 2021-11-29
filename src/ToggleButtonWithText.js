@@ -22,8 +22,8 @@ class ToggleButtonWithText extends React.Component {
     const {
       activeText = 'online',
       inActiveText= 'offline',
-      ActiveImage,
-      inActiveImage,
+      ActiveImage = require('../images/online.png'),
+      inActiveImage= require('../images/offline.png'),
       activeImageStyle,
       inActiveImageStyle,
       backgroundActive = "transparent",
