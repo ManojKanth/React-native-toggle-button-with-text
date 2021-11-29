@@ -1,0 +1,45 @@
+{
+  "name": "react-native-toggle-with-text",
+  "version": "0.0.1",
+  "description": "A react native component that show toggle View with text",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manojkanth",
+  "license": "license",
+  "dependencies": {
+    "react": "17.0.2",
+    "react-native": "0.66.3"
+  },
+  "devDependencies": {
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "react-test-renderer": "17.0.2"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "react",
+    "react native",
+    "mobile",
+    "ios",
+    "android",
+    "ui",
+    "stepper",
+    "react native toggle with text",
+    "toggle button",
+    "toggle View with text",
+    "toggle",
+    "ios toggle"
+  ],
+  "bugs": {
+    "url": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
