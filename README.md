@@ -7,7 +7,6 @@ A react native component that show toggle button with text
 
 - Pure JS.
 - Compatible with both iOS and Android.
-- Auto position. (Won't be covered or clipped by the edge of screen.)
 - Highly customizable.
 
 <p align="center">
