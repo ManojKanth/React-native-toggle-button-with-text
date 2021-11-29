@@ -11,8 +11,8 @@ A react native component that show toggle button with text
 - Highly customizable.
 
 <p align="center">
-  <img src="https://github.com/ManojKanth/image-with-text-component/blob/main/images/image1.png?raw=true" width="350" title="hover text">
-  <img src="https://github.com/ManojKanth/image-with-text-component/blob/main/images/image2.png?raw=true" width="350" alt="accessibility text">
+  <img src="https://github.com/ManojKanth/React-native-toggle-button-with-text/blob/master/images/active.png" width="350" title="active image">
+  <img src="https://github.com/ManojKanth/React-native-toggle-button-with-text/blob/master/images/inactive.png" width="350" alt="inactive image">
 </p>
 
 
