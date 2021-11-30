@@ -47,7 +47,9 @@ import ToggleButtonWithText from 'react-native-toggle-with-text';
 
 Use as a component:
 ```sh
-<ToggleButtonWithText onActive={() => console.log('online')} onDisable={() => console.log('offline')} />
+<ToggleButtonWithText 
+        onActive={() => console.log('online')} 
+        onDisable={() => console.log('offline')} />
 ```
 
 
