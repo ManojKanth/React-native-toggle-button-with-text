@@ -1,6 +1,6 @@
 {
   "name": "react-native-toggle-with-text",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A react native component that show toggle View with text",
   "main": "index.js",
   "scripts": {
