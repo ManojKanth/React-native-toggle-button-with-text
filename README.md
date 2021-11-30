@@ -21,6 +21,7 @@ A react native component that show toggle button with text
 
 
 > first image states - button is in active state
+/
 > second image states - button is in inActive state
 
 
