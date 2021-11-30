@@ -59,18 +59,18 @@ Use as a component:
 | activeText | String | YES | online | Active state text
 | inActiveText | String | YES | offline | inActive state text
 | ActiveImage | String | YES | Active image | this is the image for active state
-| inActiveImage | String | YES | '' | InActive image | this is the image for inactive state
-| activeImageStyle | String | YES | '' | style of active image style
-| inActiveImageStyle | String | YES | '' | style of inactive image style
+| inActiveImage | String | YES | inActive image | InActive image | this is the image for inactive state
+| activeImageStyle | String | YES | defualt | style of active image style
+| inActiveImageStyle | String | YES | defualt | style of inactive image style
 | backgroundActive | String | YES | 'transparent' | background color of active state
 | backgroundInactive | String | YES | 'transparent' | background color of inactive state
 | containerWidth | number | YES | 100 | button width
 | containerheight | number | YES | 30 | button height
 | borderRadius | number | YES | 15 | button border radius
-| textStyle | object | YES | '' | style of text
+| textStyle | object | YES | defualt | style of text
 | disabled | boolean | YES | false | enable button interaction
-| onActive | function | YES | '' | this is a function trigger when button in active state
-| onInActive | function | YES | '' | this is a function trigger when button in inActive state
+| onActive | function | YES | ' ' | this is a function trigger when button in active state
+| onInActive | function | YES | ' ' | this is a function trigger when button in inActive state
 
 
 
