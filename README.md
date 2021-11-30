@@ -3,11 +3,16 @@
 
 A react native component that show toggle button with text
 
+
+<p align="center">
+  <img src="https://github.com/ManojKanth/React-native-toggle-button-with-text/blob/master/images/FullSizeRender.gif" width="350" title="active image">
+</p>
 ## Features
 
 - Pure JS.
 - Compatible with both iOS and Android.
 - Highly customizable.
+
 
 <p align="center">
   <img src="https://github.com/ManojKanth/React-native-toggle-button-with-text/blob/master/images/active.png" width="350" title="active image">
